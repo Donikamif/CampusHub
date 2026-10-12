@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Courses</title>
+</head>
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Courses Introduction -->
+        <section>
+            <h2>Our Courses</h2>
+            <p>Explore our comprehensive catalog of academic programs, professional certifications, and elective courses designed for your career success[cite: 4].</p>
+        </section>
+
+        <!-- Search, Filter, and Category Navigation Section -->
+        <section aria-labelledby="courses-filter-heading">
+            <h3 id="courses-filter-heading">Search and Filter Courses</h3>
+            <nav aria-label="Course Categories">
+                <ul>
+                    <li><a href="courses.html#all">All Categories</a></li>
+                    <li><a href="courses.html#tech">Technology</a></li>
+                    <li><a href="courses.html#business">Business</a></li>
+                    <li><a href="courses.html#design">Design</a></li>
+                    <li><a href="courses.html#engineering">Engineering</a></li>
+                </ul>
+            </nav>
+            <form action="courses.html" method="get">
+                <div>
+                    <label for="search-courses">Search Courses:</label>
+                    <input type="search" id="search-courses" name="q" placeholder="Search by course title or keyword">
+                </div>
+                <div>
+                    <label for="department-select">Department:</label>
+                    <select id="department-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="business">Business Administration</option>
+                        <option value="design">Design & Media</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="humanities">Humanities</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="level-select">Level:</label>
+                    <select id="level-select" name="level">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <button type="submit">Filter Courses</button>
+            </form>
+        </section>
+
+        <!-- Courses List Section -->
+        <section aria-labelledby="courses-list-heading">
+            <h3 id="courses-list-heading">Course Directory</h3>
+            <ul>
+                <li>
+                    <article>
+                        <img src="images/web-development.jpg" alt="Students writing and testing code on laptops">
+                        <h4>Web Development</h4>
+                        <p>Department: Computer Science[cite: 4]</p>
+                        <p>ECTS: 6 ECTS[cite: 4]</p>
+                        <p>Learn modern semantic HTML, CSS, and JavaScript fundamentals for building responsive web applications.</p>
+                        <p><a href="courses.html#web-development">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/database-systems.jpg" alt="Server rack and data flow visualization graphics">
+                        <h4>Database Systems</h4>
+                        <p>Department: Computer Science[cite: 4]</p>
+                        <p>ECTS: 6 ECTS[cite: 4]</p>
+                        <p>Understand relational database architecture, SQL querying, normalization, and secure data management.</p>
+                        <p><a href="courses.html#database-systems">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/data-structures.jpg" alt="Whiteboard filled with algorithmic flowcharts and data structures">
+                        <h4>Data Structures & Algorithms</h4>
+                        <p>Department: Computer Science[cite: 4]</p>
+                        <p>ECTS: 8 ECTS[cite: 4]</p>
+                        <p>Master essential computational thinking, sorting algorithms, trees, graphs, and efficiency analysis.</p>
+                        <p><a href="courses.html#data-structures-algorithms">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/digital-marketing.jpg" alt="Digital analytics dashboard showing campaign performance metrics">
+                        <h4>Digital Marketing</h4>
+                        <p>Department: Business Administration[cite: 4]</p>
+                        <p>ECTS: 5 ECTS[cite: 4]</p>
+                        <p>Explore search engine optimization, social media marketing campaigns, consumer insights, and web analytics.</p>
+                        <p><a href="courses.html#digital-marketing">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/graphic-design.jpg" alt="Designer working on a digital illustration using a drawing tablet">
+                        <h4>Graphic Design</h4>
+                        <p>Department: Design & Media[cite: 4]</p>
+                        <p>ECTS: 5 ECTS[cite: 4]</p>
+                        <p>Build foundational skills in visual composition, typography, branding identities, and layout design.</p>
+                        <p><a href="courses.html#graphic-design">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/software-engineering.jpg" alt="Software engineers collaborating in a modern office workspace">
+                        <h4>Software Engineering</h4>
+                        <p>Department: Computer Science[cite: 4]</p>
+                        <p>ECTS: 7 ECTS[cite: 4]</p>
+                        <p>Study software development life cycles, version control, testing strategies, and collaborative team practices.</p>
+                        <p><a href="courses.html#software-engineering">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/business-management.jpg" alt="Business team reviewing financial strategy charts during a meeting">
+                        <h4>Business Management</h4>
+                        <p>Department: Business Administration[cite: 4]</p>
+                        <p>ECTS: 6 ECTS[cite: 4]</p>
+                        <p>Gain insights into organizational leadership, financial planning, strategic decision-making, and operations.</p>
+                        <p><a href="courses.html#business-management">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/english-language.jpg" alt="Students engaging in a discussion group in a classroom library">
+                        <h4>English Language</h4>
+                        <p>Department: Humanities[cite: 4]</p>
+                        <p>ECTS: 4 ECTS[cite: 4]</p>
+                        <p>Enhance academic writing, professional communication proficiency, and advanced verbal presentation skills.</p>
+                        <p><a href="courses.html#english-language">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/electrical-engineering.jpg" alt="Engineer inspecting circuit board connections with precision instruments">
+                        <h4>Electrical Engineering</h4>
+                        <p>Department: Engineering[cite: 4]</p>
+                        <p>ECTS: 8 ECTS[cite: 4]</p>
+                        <p>Learn circuit theory, electronic components, signals and systems, and introductory power systems analysis.</p>
+                        <p><a href="courses.html#electrical-engineering">View Details</a>[cite: 4]</p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="index.html">Privacy Policy</a></li>
+                <li><a href="index.html">Terms of Use</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

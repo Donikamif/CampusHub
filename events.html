@@ -1,0 +1,119 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Events</title>
+</head>
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Events Introduction -->
+        <section>
+            <h2>Campus Events</h2>
+            <p>Discover upcoming lectures, workshops, career fairs, and seminars happening across campus[cite: 3].</p>
+        </section>
+
+        <!-- Search, Filter, and Category Navigation Section -->
+        <section aria-labelledby="events-filter-heading">
+            <h3 id="events-filter-heading">Search and Filter Events</h3>
+            <nav aria-label="Event Categories">
+                <ul>
+                    <li><a href="events.html#all">All Categories</a></li>
+                    <li><a href="events.html#lectures">Lectures</a></li>
+                    <li><a href="events.html#workshops">Workshops</a></li>
+                    <li><a href="events.html#fairs">Fairs</a></li>
+                    <li><a href="events.html#seminars">Seminars</a></li>
+                </ul>
+            </nav>
+            <form action="events.html" method="get">
+                <div>
+                    <label for="search-events">Search Events:</label>
+                    <input type="search" id="search-events" name="q" placeholder="Search by title or topic">
+                </div>
+                <div>
+                    <label for="category-select">Category:</label>
+                    <select id="category-select" name="category">
+                        <option value="">All Categories</option>
+                        <option value="lectures">Lectures</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="fairs">Fairs</option>
+                        <option value="seminars">Seminars</option>
+                    </select>
+                </div>
+                <button type="submit">Filter Events</button>
+            </form>
+        </section>
+
+        <!-- Events List Section -->
+        <section aria-labelledby="events-list-heading">
+            <h3 id="events-list-heading">Upcoming Events Schedule</h3>
+            <ul>
+                <li>
+                    <article>
+                        <h4>Guest Lecture: AI in Education</h4>
+                        <p><time datetime="2027-04-15T14:00">April 15, 2027 at 2:00 PM</time></p>
+                        <p>Venue: Science Auditorium, Hall A</p>
+                        <p>Explore how artificial intelligence is transforming modern teaching methodologies, personalized learning, and student engagement.</p>
+                        <p><a href="events.html#ai-in-education">View Details</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Workshop: Web Development</h4>
+                        <p><time datetime="2027-04-22T10:00">April 22, 2027 at 10:00 AM</time></p>
+                        <p>Venue: Computer Lab 3B</p>
+                        <p>A hands-on coding workshop covering responsive design principles and modern semantic HTML and CSS layouts.</p>
+                        <p><a href="events.html#web-development-workshop">View Details</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Career Fair 2027</h4>
+                        <p><time datetime="2027-04-30T09:00">April 30, 2027 at 9:00 AM</time></p>
+                        <p>Venue: Student Union Exhibition Hall</p>
+                        <p>Meet top industry recruiters, explore full-time career options, and secure competitive summer internships.</p>
+                        <p><a href="events.html#career-fair-2027">View Details</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h4>Seminar: Digital Transformation</h4>
+                        <p><time datetime="2027-05-12T15:30">May 12, 2027 at 3:30 PM</time></p>
+                        <p>Venue: Business School Conference Room</p>
+                        <p>An expert-led seminar discussing enterprise digital strategies, cloud adoption, and modern business innovation.</p>
+                        <p><a href="events.html#digital-transformation">View Details</a></p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="index.html">Privacy Policy</a></li>
+                <li><a href="index.html">Terms of Use</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

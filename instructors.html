@@ -1,0 +1,134 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Instructors</title>
+</head>
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Introduction -->
+        <section>
+            <h2>Our Instructors</h2>
+            <p>Meet our experienced faculty members dedicated to academic excellence, student mentorship, and cutting-edge research.</p>
+        </section>
+
+        <!-- Search and Filter Section -->
+        <section aria-labelledby="filter-heading">
+            <h3 id="filter-heading">Filter Instructors</h3>
+            <form action="instructors.html" method="get">
+                <div>
+                    <label for="search-instructors">Search by Name or Keyword:</label>
+                    <input type="search" id="search-instructors" name="q" placeholder="e.g., Jane Doe">
+                </div>
+                <div>
+                    <label for="department-select">Department:</label>
+                    <select id="department-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="business">Business Administration</option>
+                        <option value="design">Design & Media</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </div>
+                <button type="submit">Filter Instructors</button>
+            </form>
+        </section>
+
+        <!-- Instructors List Section -->
+        <section aria-labelledby="instructors-list-heading">
+            <h3 id="instructors-list-heading">Faculty Directory</h3>
+            <ul>
+                <li>
+                    <article>
+                        <img src="images/instructor-1.jpg" alt="Portrait of Dr. Eleanor Vance smiling in a lecture hall">
+                        <h4>Dr. Eleanor Vance</h4>
+                        <p>Professor of Computer Science</p>
+                        <p>Department: Computer Science</p>
+                        <p>Expertise: Artificial Intelligence, Machine Learning, Data Structures</p>
+                        <p><a href="instructors.html#eleanor-vance">View Profile</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/instructor-2.jpg" alt="Portrait of Marcus Thorne wearing a professional blazer">
+                        <h4>Marcus Thorne</h4>
+                        <p>Associate Professor</p>
+                        <p>Department: Business Administration</p>
+                        <p>Expertise: Digital Marketing, Consumer Behavior, Brand Strategy</p>
+                        <p><a href="instructors.html#marcus-thorne">View Profile</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/instructor-3.jpg" alt="Portrait of Dr. Sophia Martinez in front of a design studio">
+                        <h4>Dr. Sophia Martinez</h4>
+                        <p>Professor of Graphic Design</p>
+                        <p>Department: Design & Media</p>
+                        <p>Expertise: UI/UX Design, Typography, Visual Communication</p>
+                        <p><a href="instructors.html#sophia-martinez">View Profile</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/instructor-4.jpg" alt="Portrait of David Kim in a computer lab setting">
+                        <h4>David Kim</h4>
+                        <p>Senior Lecturer</p>
+                        <p>Department: Computer Science</p>
+                        <p>Expertise: Web Development, Cloud Computing, Full-Stack Architectures</p>
+                        <p><a href="instructors.html#david-kim">View Profile</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/instructor-5.jpg" alt="Portrait of Dr. Amina Patel with books in a library">
+                        <h4>Dr. Amina Patel</h4>
+                        <p>Associate Professor</p>
+                        <p>Department: Engineering</p>
+                        <p>Expertise: Database Systems, Distributed Networks, Information Security</p>
+                        <p><a href="instructors.html#amina-patel">View Profile</a></p>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="images/instructor-6.jpg" alt="Portrait of Lucas Wright holding a notebook">
+                        <h4>Lucas Wright</h4>
+                        <p>Lecturer</p>
+                        <p>Department: Design & Media</p>
+                        <p>Expertise: Digital Animation, 3D Modeling, Interactive Media</p>
+                        <p><a href="instructors.html#lucas-wright">View Profile</a></p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="index.html">Privacy Policy</a></li>
+                <li><a href="index.html">Terms of Use</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
